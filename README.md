@@ -7,6 +7,8 @@ Completed Tasks:
   <li>Implementing docker shared volume and enabled seamless communication</li>
   <li>Docker Compose </li>
   <li>Uploaded local containers into ACR</li>
+  
+<br>
 
 Yet to implement:
   <li>Deployment in cloud</li>
