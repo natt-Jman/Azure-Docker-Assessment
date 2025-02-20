@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+
+  counter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - counter_volume:/data
+  fetch_counter:
+    build:
+      context: .
+      dockerfile: Dockerfile.fetch
+    volumes:
+      - counter_volume:/data
+    ports:
+      - "80:80"
+
+  
+
+volumes:
+  counter_volume:
